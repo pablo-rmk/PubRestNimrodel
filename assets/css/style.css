@@ -1,0 +1,29 @@
+@media (max-width: 991px) {
+    .formulario {
+        display:none;
+    }
+}
+h4 {
+    text-decoration-line: overline;
+}
+#nombre::placeholder{
+    color: rgb(189, 189, 189);
+}
+#email::placeholder{
+    color: rgb(189, 189, 189);
+}
+#telefono::placeholder{
+    color: rgb(189, 189, 189);
+}
+#carouselExample img {
+
+    height: 50vh;
+    
+}
+footer {
+    background-image: url("/NimrodelPubRestaurant/assets/img/fondo.jpg");
+    background-size: 95rem 30rem;
+    background-repeat: repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

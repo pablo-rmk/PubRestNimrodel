@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- JQuery 3.6.4 from Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- yBox Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/ybox.min.css" />
+    <!-- yBox Directives (optional) -->
+    <script src="./assets/js/directive.min.js"></script>
+    <!-- Hoja de Estilos Externa -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/09b092f58a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/img/n.png" type="image/png" />
+    <title>Nimrodel Pub&Restaurant</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-image"
+        style="background-image:url(./assets/img/fondo.jpg); background-size:500px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/n.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Nuestros productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="mostrarContacto()" class="nav-link active text-light" aria-current="page"
+                            href="#contacto">Comuniquémonos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="mostrarReserva()" class="nav-link active text-light" href="#reserva">Reserva</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text-center pt-3 pb-3">
+        <h1 class="text-secondary">Nimrodel Pub Restaurant</h1>
+        <h4 class="pt-4"><b>Destacados de la semana</b></h4>
+    </div>
+
+
+    <div style="display:none;">
+        <div id="cardUno">
+            <div class="container text-center d-flex justify-content-center">
+                <div class="col-8">
+                    <div class="card mt-5 mb-5">
+                        <img src="./assets/img/bebidas.jpg" class="card-img-top" alt="bebidas.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">GASEOSAS</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cardDos">
+            <div class="container text-center d-flex justify-content-center">
+                <div class="col-8">
+                    <div class="card mt-5 mb-5">
+                        <img src="./assets/img/tablas.jpg" class="card-img-top" alt="tablas.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">TABLAS</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cardTres">
+            <div class="container text-center d-flex justify-content-center">
+                <div class="col-8">
+                    <div class="card mt-5 mb-5">
+                        <img src="./assets/img/shop.jpeg" class="card-img-top" alt="schop.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">SCHOP CERVEZA</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="p-3 col-md-12 col-lg-4">
+                <div class="card yBox" href="#cardUno">
+                    <img src="./assets/img/bebidas.jpg" class="card-img-top" alt="bebidas.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">GASEOSAS</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 col-md-12 col-lg-4">
+                <div class="card yBox" href="#cardDos">
+                    <img src="./assets/img/tablas.jpg" class="card-img-top" alt="tablas.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">TABLAS</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 col-md-12 col-lg-4">
+                <div class="card yBox" href="#cardTres">
+                    <img src="./assets/img/shop.jpeg" class="card-img-top" alt="schop.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">SCHOP CERVEZA</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacto" class="formulario bg-dark container w-25 text-center text-light mt-4">
+        <form onsubmit="alertaContacto()">
+            <h5 class="pt-2">Comuniquémonos</h5>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombreContacto" name="nombre" placeholder="Su nombre"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="emailContacto" name="email"
+                    placeholder="su.correo@email.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" name="telefonoContacto" placeholder="+56912345678"
+                    pattern="^\++569+[0-9]{8}$" required>
+            </div>
+            <div class="mb-3">
+                <label for="motivo" class="form-label">Motivo</label>
+                <input type="text" class="form-control" id="motivo" name="motivoContacto" list="motivos" required>
+                <datalist id="motivos">
+                    <option>Felicitaciones</option>
+                    <option>Reclamos</option>
+                    <option>Consultas</option>
+                    <option>Sugerencias</option>
+                </datalist>
+            </div>
+            <div class="container mb-3 w-75">
+                <div class="form-floating">
+                    <textarea class="form-control" style="height: 20vh;" id="textareaContacto" name="textarea" required></textarea>
+                </div>
+            </div>
+            <button onclick="alertaLlenado()" class="btn btn-primary mb-3">Enviar</button>
+        </form>
+    </div>
+
+    <div id="reserva" class="formulario bg-dark container w-25 text-center text-light mt-4">
+        <form id="formReserva">
+            <h5 class="pt-2">Reservar</h5>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombreReserva" name="nombre" placeholder="Su nombre"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="emailReserva" name="email"
+                    placeholder="su.correo@email.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefonoReserva" name="telefono" placeholder="+56912345678"
+                    pattern="^\++569+[0-9]{8}$" required>
+            </div>
+            <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="fechaReserva" name="fecha" required>
+            </div>
+            <div class="mb-3">
+                <label for="hora" class="form-label">Hora</label>
+                <input type="time" class="form-control" id="horaReserva" name="hora" required>
+            </div>
+            <div class="mb-3">
+                <label for="cantidad" class="form-label">Cantidad de asistentes</label>
+                <input type="number" class="form-control" id="cantidadReserva" name="cantidad" min="1" required>
+            </div>
+            <button class="btn btn-primary mb-3">Enviar</button>
+        </form>
+    </div>
+
+    <div id="carouselExample" class="carousel slide mt-3">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/img/vino.jpg" class="d-block w-100" alt="vino.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/mojito.jpg" class="d-block w-100" alt="mojito.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/chorillana.jpg" class="d-block w-100" alt="chorrillana.jpg">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <footer>
+        <p class="text-center text-light">Todos los derechos reservados <i
+                class="fa-sharp fa-regular fa-registered"></i></p>
+    </footer>
+
+    <!-- yBox JavaScript -->
+    <script src="./assets/js/ybox.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Js + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
