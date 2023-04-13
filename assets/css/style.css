@@ -1,27 +1,60 @@
 @media (max-width: 991px) {
     .formulario {
-        display:none;
+        display: none;
     }
 }
+
 h4 {
     text-decoration-line: overline;
 }
-#nombre::placeholder{
-    color: rgb(189, 189, 189);
-}
-#email::placeholder{
-    color: rgb(189, 189, 189);
-}
-#telefono::placeholder{
-    color: rgb(189, 189, 189);
-}
-#carouselExample img {
 
-    height: 50vh;
-    
+#nombre::placeholder {
+    color: rgb(189, 189, 189);
 }
+
+#email::placeholder {
+    color: rgb(189, 189, 189);
+}
+
+#telefono::placeholder {
+    color: rgb(189, 189, 189);
+}
+
+#carouselExample2 img {
+    height: 50vh;
+    ;
+}
+
+#divDos h3 {
+    padding-top: 7.9vh;
+    padding-bottom: 5vh;
+}
+
+#divDos p {
+    padding-bottom: 7.9vh;
+}
+
+#divTres img {
+    /* width:257px; */
+    height: 28.5vh;
+}
+
+#divTres p {
+    color: #4e4f50;
+}
+
+.card p {
+    text-align: justify;
+}
+
+#carrusel .card {
+    background-color: #4e4f50;
+    color: white;
+}
+
+
 footer {
-    background-image: url("/NimrodelPubRestaurant/assets/img/fondo.jpg");
+    background-image: url("/RestaurantNimrodel/assets/img/fondo.jpg");
     background-size: 95rem 30rem;
     background-repeat: repeat;
     padding-top: 100px;

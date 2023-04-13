@@ -40,7 +40,7 @@
                         <a class="nav-link active text-light" aria-current="page" href="#">Nuestros productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-light" href="#">Sobre nosotros</a>
+                        <a class="nav-link active text-light yBox" href="#carrusel">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a onclick="mostrarContacto()" class="nav-link active text-light" aria-current="page"
@@ -53,6 +53,94 @@
             </div>
         </div>
     </nav>
+
+    <div style="display:none;">
+        <div id="carrusel">
+            <div id="carouselExample" class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div>
+                            <div class="container text-center d-flex justify-content-center">
+                                <div class="col-8">
+                                    <div class="card mt-5 mb-5 border-0">
+                                        <div class="card-body">
+                                            <h3 class="card-title fw-bold mb-5">Nimrodel Pub Restaurant</h3>
+                                            <p class="mb-5">“Nimrodel Significa “dama de la cueva blanca”. Fue una elfa
+                                                silvana que
+                                                vivió
+                                                durante la Tercera Edad del Sol en el bosque de Lothlórien. En honor a
+                                                su nombre, se
+                                                acuña
+                                                Nimrodel al río que nace en las Montañas Nubladas”.</p>
+                                            <img src="./assets/img/IMG2.jpg" alt="bebidas.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <div class="container text-center d-flex justify-content-center">
+                                <div class="col-8">
+                                    <div id="divDos" class="card mt-5 mb-5 border-0">
+                                        <div class="card-body">
+                                            <h3 class="card-title fw-bold">Nimrodel Pub Restaurant</h3>
+                                            <p>Nimrodel Pub Restaurant es un oasis de calma y diversión,
+                                                lleno de
+                                                rincones acogedores
+                                                en donde se resalta la belleza de su decoración élfica.
+                                                Es un lugar ideal para visitar solo o acompañado, disfrutar una tarde
+                                                con amigos,
+                                                terminar
+                                                el día después del trabajo o almorzar con tu familia.
+                                                Puedes probar nuestras tradicionales tablas, en todas sus variedades y
+                                                que nos han
+                                                otorgado reconocimiento dentro de la cultura gastronómica.
+                                                También puedes disfrutar nuestras cervezas de fabricación propia, con
+                                                sabores que te
+                                                llevarán a un mágico mundo.”.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <div class="container text-center d-flex justify-content-center">
+                                <div class="col-8">
+                                    <div id="divTres" class="card mt-5 mb-5 border-0">
+                                        <div class="card-body">
+                                            <h3 class="card-title fw-bold">Nimrodel Pub Restaurant</h3>
+                                            <p>“Nimrodel Significa “dama de la cueva blanca”. Fue una elfa
+                                                silvana que
+                                                vivió
+                                                durante la Tercera Edad del Sol en el bosque de Lothlórien. En honor a
+                                                su nombre, se
+                                                acuña
+                                                Nimrodel al río que nace en las Montañas Nubladas”.</p>
+                                            <img src="./assets/img/IMG1.jpg" alt="bebidas.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <div class="text-center pt-3 pb-3">
         <h1 class="text-secondary">Nimrodel Pub Restaurant</h1>
@@ -169,7 +257,8 @@
             </div>
             <div class="container mb-3 w-75">
                 <div class="form-floating">
-                    <textarea class="form-control" style="height: 20vh;" id="textareaContacto" name="textarea" required></textarea>
+                    <textarea class="form-control" style="height: 20vh;" id="textareaContacto" name="textarea"
+                        required></textarea>
                 </div>
             </div>
             <button onclick="alertaLlenado()" class="btn btn-primary mb-3">Enviar</button>
@@ -210,7 +299,7 @@
         </form>
     </div>
 
-    <div id="carouselExample" class="carousel slide mt-3">
+    <div id="carouselExample2" class="carousel slide mt-3">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./assets/img/vino.jpg" class="d-block w-100" alt="vino.jpg">
@@ -222,11 +311,11 @@
                 <img src="./assets/img/chorillana.jpg" class="d-block w-100" alt="chorrillana.jpg">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
